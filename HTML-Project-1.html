@@ -10,11 +10,11 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #161616; /* Grey background color */
+      background-color: #161616;
       font-family: 'Montserrat', sans-serif;
       flex-direction: column;
       text-align: center;
-      color: white; /* Change font color to white */
+      color: white;
     }
     p {
       margin-bottom: 10px;
@@ -29,12 +29,12 @@
       border-radius: 5px;
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
-      color: #161616; /* Change font color of button text to white */
+      color: #161616;
     }
     .gif {
-      margin-top: 0px; /* Adjust margin to space out the GIF */
-      width: 200px; /* Set width of the GIF */
-      height: auto; /* Maintain aspect ratio */
+      margin-top: 0px;
+      width: 200px;
+      height: auto;
     }
   </style>
 </head>
@@ -49,13 +49,11 @@
 
 <script>
 function playVideo() {
-  // Set the YouTube video URL
+
   var videoUrl = 'https://www.youtube.com/embed/VJ30QdXj8vc?autoplay=1';
   
-  // Open a new window and set its content to the YouTube video URL
   var videoWindow = window.open(videoUrl, '_blank');
   
-  // Focus on the newly opened window (optional)
   videoWindow.focus();
 }
 </script>
