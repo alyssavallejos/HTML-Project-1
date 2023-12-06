@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Play YouTube Video</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #161616; /* Grey background color */
+      font-family: 'Montserrat', sans-serif;
+      flex-direction: column;
+      text-align: center;
+      color: white; /* Change font color to white */
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    button {
+      margin-top: 0px;
+      padding: 10px 50px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: lightpink;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color: #161616; /* Change font color of button text to white */
+    }
+    .gif {
+      margin-top: 0px; /* Adjust margin to space out the GIF */
+      width: 200px; /* Set width of the GIF */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
+</head>
+<body>
+
+<p><b>Hi my love!</b><br><br>I know you're feeling stressed, so here I am
+    <br>using my not so great HTML skills, in an attempt to make you smile.<br><br><i>P.S I am so proud of you</i><br>xoxo</p>
+
+<img class="gif" src="https://media.giphy.com/media/Xv0aLD5YZyLvI2l4ts/giphy.gif" alt="cat GIF">
+
+<button onclick="playVideo()">Play Video</button>
+
+<script>
+function playVideo() {
+  // Set the YouTube video URL
+  var videoUrl = 'https://www.youtube.com/embed/VJ30QdXj8vc?autoplay=1';
+  
+  // Open a new window and set its content to the YouTube video URL
+  var videoWindow = window.open(videoUrl, '_blank');
+  
+  // Focus on the newly opened window (optional)
+  videoWindow.focus();
+}
+</script>
+
+</body>
+</html>
